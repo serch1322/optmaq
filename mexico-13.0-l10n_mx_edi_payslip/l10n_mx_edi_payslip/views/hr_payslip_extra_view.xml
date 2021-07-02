@@ -74,6 +74,6 @@
     </record>
 
     <menuitem
-        id="grp_payslip_extra" name="Extra" parent="hr_payroll.menu_hr_payroll_configuration"
+        id="grp_payslip_extra" name="Extra" parent="hr_work_entry_contract.menu_hr_payroll_configuration"
         sequence="50" action='action_payslip_extra'/>
 </odoo>
