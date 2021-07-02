@@ -111,6 +111,12 @@
         <xpath expr="//div[hasclass('page')]/div[@id='total']" position="replace">
         </xpath>
 
+        <xpath expr="//div[hasclass('page')]/p[1]" position="replace">
+        </xpath>
+
+        <xpath expr="//div[hasclass('page')]/p[2]" position="replace">
+        </xpath>
+
         <xpath expr="//div[hasclass('page')]/table[3]" position="replace">
         </xpath>
 
@@ -219,9 +225,12 @@
                 </table>
             </t>
         </xpath>
-        <xpath expr="//div[hasclass('page')]/p[hasclass('text-right')]" position="attributes">
+        <xpath expr="//div[hasclass('page')]/p[hasclass('text-center')]" position="attributes">
              <attribute name='style'>font-size:9px; margin-bottom:1px;</attribute>
              <attribute name='class'>text-left</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('page')]/p[hasclass('text-center')]" position="replace">
+            <p class="text-center">Firma Autorizada</p>
         </xpath>
         <xpath expr="//div[hasclass('page')]/p" position="after">
             <t t-if="o.l10n_mx_edi_cfdi_uuid">
