@@ -44,7 +44,7 @@ def create_list_html(array):
 
 class HrPayslip(models.Model):
     _name = 'hr.payslip'
-    _inherit = ['hr.payslip', 'mail.thread', 'l10n_mx_edi.pac.sw.mixin']
+    _inherit = ['hr.payslip', 'mail.thread']
 
     l10n_mx_edi_payment_date = fields.Date(
         'Payment Date', required=True, readonly=True,
