@@ -11,7 +11,7 @@
                 <field name="l10n_mx_edi_working_type"/>
                 <field name="l10n_mx_edi_day_off"/>
             </xpath>
-            <xpath expr="//field[@name='advantages']" position="after">
+            <xpath expr="//div[@name='wage']" position="after">
                 <field name="l10n_mx_edi_salary_type"/>
                 <label for="l10n_mx_edi_holidays" class="oe_inline"/>
                 <div class="o_row">
