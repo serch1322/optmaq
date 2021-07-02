@@ -57,7 +57,6 @@
         "data/ir_actions_server_data.xml",
         "data/hr_contract_type_data.xml",
         "data/hr_employee_data.xml",
-        "data/hr_payroll_data.xml",
         "data/payroll_structure_data.xml",
         'data/res_country_state.xml',
         "data/salary_rule_base_finiquito_data.xml",
