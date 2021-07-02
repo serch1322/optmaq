@@ -108,7 +108,7 @@
             </table>
         </xpath>
 
-        <xpath expr="//div[hasclass('page')]/table[4]" position="replace">
+        <xpath expr="//div[hasclass('page')]/div[@id='total']" position="replace">
         </xpath>
 
         <xpath expr="//div[hasclass('page')]/table[3]" position="replace">
