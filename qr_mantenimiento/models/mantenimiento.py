@@ -23,7 +23,7 @@ class QRMantenimiento(models.Model):
                 box_size=10,
                 border=4,
             )
-            qr.add("%s/web#id=%s&action=344&model=c&view_type=form&cids=1&menu_id=227"%(base_url,data))
+            qr.add_data("%s/web#id=%s&action=344&model=c&view_type=form&cids=1&menu_id=227"%(base_url,data))
             qr.make(fit=True)
             img = qr.make_image()
             tmp = BytesIO()
