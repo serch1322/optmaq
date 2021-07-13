@@ -8,7 +8,7 @@
             <xpath expr="//page[@name='maintenance']" position="after">
                 <page string="Mantenimiento Preventivo">
                     <field name="tipo_mantenimiento">
-                        <tree string="Mantenimiento Preventivo">
+                        <tree string="Mantenimiento Preventivo" editable="bottom">
                             <field name="name"/>
                             <field name="tiempo"/>
                             <field name="refacciones">
