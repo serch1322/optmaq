@@ -7,12 +7,12 @@
         <field name="arch" type="xml">
             <xpath expr="//page[@name='maintenance']" position="after">
                 <page string="Mantenimiento Preventivo">
-                    <field name="tipo_mantenimiento">
+                    <field name="tipo_mantenimiento" invisible="1">
                         <tree string="Mantenimiento Preventivo">
                             <field name="name"/>
                             <field name="tiempo"/>
-                            <field name="refacciones">
-                                <tree string="Refacciones">
+                            <field name="refacciones" invisible="1">
+                                <tree string="Refacciones" editable="bottom">
                                     <field name="name"/>
                                     <field name="qty"/>
                                 </tree>
