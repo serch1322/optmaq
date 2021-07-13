@@ -12,7 +12,7 @@ class MantenimientoPreventivo(models.Model):
 
 class TipodePreventivo(models.Model):
     _name = ['mantenimiento.preventivo']
-    _description = "Creación de Mantenimiento Preventivo por Equipo"
+    _description = ['Creación de Mantenimiento Preventivo por Equipo']
 
     name = fields.Char(string="Tipo de Mantenimiento")
     equipo = fields.Many2one('maintenance.equipment', string="Equipo")
