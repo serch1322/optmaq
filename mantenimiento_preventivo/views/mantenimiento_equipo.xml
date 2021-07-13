@@ -11,10 +11,8 @@
                         <tree string="Mantenimiento Preventivo">
                             <field name="name"/>
                             <field name="tiempo"/>
-                            <tree>
-                                <field name="refacciones"/>
-                                <field name="qty"/>
-                            </tree>
+                            <field name="refacciones"/>
+                            <field name="qty"/>
                         </tree>
                     </field>
                 </page>
