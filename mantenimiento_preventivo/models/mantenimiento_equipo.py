@@ -19,7 +19,7 @@ class MantenimientoPreventivo(models.Model):
             'maintenance_type': 'corrective',
             'maintenance_team_id': self.maintenance_team_id.id,
             'user_id': self.technician_user_id.id,
-            'scheduled_date': date.today(),
+            'schedule_date': date.today(),
         })
         mante_creado = correctivo.create(valores_equipo)
         return{
