@@ -5,7 +5,7 @@ import base64
 
 from io import BytesIO
 
-from odoo import models, fields, _
+from odoo import models, fields, api, _
 from odoo.exceptions import UserError
 
 class QRMantenimiento(models.Model):

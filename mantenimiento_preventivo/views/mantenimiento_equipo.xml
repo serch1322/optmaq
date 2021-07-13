@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="mantenimiento_preventivo" model="ir.ui.view">
+        <field name="name">mantenimiento.preventivo</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='maintenance']" position="after">
+                <page string="Mantenimiento Preventivo">
+                    <field name="tipo_mantenimiento">
+                        <tree string="Mantenimiento Preventivo">
+                            <field name="name"/>
+                            <field name="tiempo"/>
+                            <tree>
+                                <field name="refacciones"/>
+                                <field name="qty"/>
+                            </tree>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
