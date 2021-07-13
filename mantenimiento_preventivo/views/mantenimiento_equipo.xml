@@ -27,4 +27,23 @@
             </xpath>
         </field>
     </record>
+
+
+    <record id="refacciones_en_mantenimiento" model="ir.ui.view">
+        <field name="name">refacciones.en.mantenimiento</field>
+        <field name="model">maintenance.request</field>
+        <field name="inherit_id" ref="	maintenance.hr_equipment_request_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group" position="after">
+                <page string="Refacciones en Mantenimiento">
+                    <field name="refacciones">
+                        <tree string="Refacciones en Mantenimiento" editable="bottom">
+                            <field name="name"/>
+                            <field name="qty"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
 </odoo>

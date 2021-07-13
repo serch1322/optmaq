@@ -47,3 +47,14 @@ class Refacciones(models.Model):
     qty = fields.Float(string="Cantidad", default=1)
     refaccion = fields.Many2one('mantenimiento.preventivo',string="Refaccion")
 
+class Mantenimientos(models.Model):
+    _inherit = 'maintenance.request'
+
+    refacciones = fields.One2many('refacciones.en.mantenimiento','refaccion',string="Refacciones en Mantenimiento", ondelete='cascade')
+
+class Mantenimientos(models.Model):
+    _name = 'refacciones.en.mantenimiento'
+
+    name = fields.Many2one('product.product', string="Refacciones")
+    qty = fields.Float(string="Cantidad", default=1)
+    refaccion = fields.Many2one('maintenance.request', string="Refaccion")
