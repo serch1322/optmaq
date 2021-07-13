@@ -1,4 +1,4 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 mantenimiento_preventivo_manager,mantenimiento.preventivo.manager,model_mantenimiento_preventivo,maintenance.group_equipment_manager,1,1,1,1
-mantenimiento_preventivo_manager,mantenimiento.preventivo.manager,model_mantenimiento_refacciones,maintenance.group_equipment_manager,1,1,1,1
+mantenimiento_refacciones_manager,mantenimiento.refacciones.manager,model_mantenimiento_refacciones,maintenance.group_equipment_manager,1,1,1,1
 mantenimiento_preventivo_user,mantenimiento.preventivo.user,model_mantenimiento_preventivo,base.group_user,1,0,0,0
