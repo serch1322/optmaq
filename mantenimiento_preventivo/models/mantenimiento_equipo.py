@@ -13,7 +13,14 @@ class TipodePreventivo(models.Model):
 
     name = fields.Char(string="Tipo de Mantenimiento")
     equipo = fields.Many2one('maintenance.equipment', string="Equipo")
-    refacciones = fields.Many2one('product.product', string="Refacciones")
-    qty = fields.Float(string="Cantidad", default=1)
     tiempo = fields.Integer(string="Días para Siguiente Mantenimiento")
+    refacciones = fields.One2many('mantenimiento.refacciones', 'refaccion',string="Tipo de Refacciones", ondelete='cascade')
+
+
+class Refacciones(models.Model):
+    _name = 'mantenimiento.refacciones'
+
+    name = fields.Many2one('product.product', string="Refacciones")
+    qty = fields.Float(string="Cantidad", default=1)
+    refaccion = fields.Many2one('mantenimiento.preventivo',string="Refaccion")
 
