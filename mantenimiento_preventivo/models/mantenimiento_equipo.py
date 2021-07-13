@@ -11,7 +11,7 @@ class MantenimientoPreventivo(models.Model):
 
 
 class TipodePreventivo(models.Model):
-    _name = ['maintenance.equipment']
+    _name = ['mantenimiento.preventivo']
     _description = "Creación de Mantenimiento Preventivo por Equipo"
 
     name = fields.Char(string="Tipo de Mantenimiento")
