@@ -13,6 +13,7 @@
         'stock',
     ],
     'data': [
+        'security/ir.model.access.csv',
         'views/mantenimiento_equipo.xml',
     ],
     'installable': True,
