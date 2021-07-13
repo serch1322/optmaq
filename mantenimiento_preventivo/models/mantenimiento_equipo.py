@@ -35,7 +35,7 @@ class TipodePreventivo(models.Model):
     _name = 'mantenimiento.preventivo'
 
     name = fields.Char(string="Tipo de Mantenimiento")
-    equipo = fields.Many2one('maintenance.equipment', string="Equipo")
+    equipo = fields.Many2one('maintenance.equipment', string="Equipo", invisible=True)
     tiempo = fields.Integer(string="Días para Siguiente Mantenimiento")
     refacciones = fields.One2many('mantenimiento.refacciones', 'refaccion',string="Refacciones", ondelete='cascade')
 
@@ -43,9 +43,9 @@ class TipodePreventivo(models.Model):
 class Refacciones(models.Model):
     _name = 'mantenimiento.refacciones'
 
-    name = fields.Many2one('product.product', string="Refacciones")
+    name = fields.Many2one('product.product', string="Refaccion")
     qty = fields.Float(string="Cantidad", default=1)
-    refaccion = fields.Many2one('mantenimiento.preventivo',string="Refaccion")
+    refaccion = fields.Many2one('mantenimiento.preventivo',string="Refaccion", invisible=True)
 
 class Mantenimientos(models.Model):
     _inherit = 'maintenance.request'
@@ -55,6 +55,6 @@ class Mantenimientos(models.Model):
 class Mantenimientos(models.Model):
     _name = 'refacciones.en.mantenimiento'
 
-    name = fields.Many2one('product.product', string="Refacciones")
+    name = fields.Many2one('product.product', string="Refaccion")
     qty = fields.Float(string="Cantidad", default=1)
     refaccion = fields.Many2one('maintenance.request', string="Refaccion")

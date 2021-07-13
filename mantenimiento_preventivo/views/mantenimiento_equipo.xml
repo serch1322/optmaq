@@ -14,7 +14,6 @@
                         <tree string="Mantenimiento Preventivo">
                             <field name="name"/>
                             <field name="tiempo"/>
-                            <field name="equipo" invisible="1"/>
                             <field name="refacciones" invisible="1">
                                 <tree string="Refacciones" editable="bottom">
                                     <field name="name"/>
