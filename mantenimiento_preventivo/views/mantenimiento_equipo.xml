@@ -35,14 +35,16 @@
         <field name="inherit_id" ref="maintenance.hr_equipment_request_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//sheet/group" position="after">
-                <page string="Refacciones en Mantenimiento">
-                    <field name="refacciones">
-                        <tree string="Refacciones en Mantenimiento" editable="bottom">
-                            <field name="name"/>
-                            <field name="qty"/>
-                        </tree>
-                    </field>
-                </page>
+                <notebook>
+                    <page string="Refacciones en Mantenimiento">
+                        <field name="refacciones">
+                            <tree string="Refacciones en Mantenimiento" editable="bottom">
+                                <field name="name"/>
+                                <field name="qty"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
             </xpath>
         </field>
     </record>
