@@ -16,7 +16,7 @@ class MantenimientoPreventivo(models.Model):
             'name': "Mantenimiento Correctivo",
             'equipment_id': self.id,
             'request_date': date.today(),
-            'type': 'corrective',
+            'maintenance_type': 'corrective',
             'maintenance_team_id': self.maintenance_team_id.id,
             'user_id': self.technician_user_id.id,
             'scheduled_date': date.today(),
