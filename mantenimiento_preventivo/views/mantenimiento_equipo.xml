@@ -5,10 +5,8 @@
         <field name="model">maintenance.equipment</field>
         <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//form/sheet" position="before">
-                <header>
-                    <button name="mantenimiento_correctivo" type="object" string="Crear MTO Correctivo" class="btn btn-primary"/>
-                </header>
+            <xpath expr="//header" position="inside">
+                <button name="mantenimiento_correctivo" type="object" string="Crear MTO Correctivo" class="btn btn-primary"/>
             </xpath>
             <xpath expr="//page[@name='maintenance']" position="after">
                 <page string="Mantenimiento Preventivo">
