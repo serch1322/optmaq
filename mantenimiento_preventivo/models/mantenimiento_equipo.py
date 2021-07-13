@@ -27,7 +27,6 @@ class MantenimientoPreventivo(models.Model):
              'res_model': 'maintenance.request',
              'view_type': 'form',
              'view_mode': 'tree,form',
-             'target': 'self',
         }
 
 
